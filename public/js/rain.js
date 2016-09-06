@@ -1,31 +1,31 @@
 /*	代码雨
 	@启动  rain.init($canvas,seconds,callback);
-	@param  $canvas canvas的jquery元素
+	@param  canvas canvas的dom元素
 			second为0时 时间无限长
 			callback 动画完成时回调函数 可省略
 	@autor  ZhangShuai
 	@Date   2016.9.5
 */	
 var rain = {
-	fontSize :12, 
+	fontSize :16, 
 	bgc:'rgba(0,0,0,0.07)',
 	fontColor:'#0f0',
 	intervalTime:40,
 	animateFrame : 0,
 
-	initCanvas : function($canvas,seconds,callBack){
+	initCanvas : function(canvas,seconds,callBack){
 		this.fontsYPosionArr = [];
-		this.cols =  $canvas.width() / this.fontSize;
-		this.rows = $canvas.height() / this.fontSize;
-		this.ctx = $canvas[0].getContext('2d');
+		this.cols =  canvas.width / this.fontSize;
+		this.rows = canvas.height / this.fontSize;
+		this.ctx = canvas.getContext('2d');
 		this.ctx.font = this.fontSize +'px arial';
-		this.canvas = $canvas;
+		this.canvas = canvas;
 
 		for(var i=0;i<this.cols;i++){
 			this.fontsYPosionArr[i] = Math.random()* this.rows | 0;
 		}
 		this.ctx.fillStyle = '#000';
-		this.ctx.fillRect(0,0,$canvas.width(),$canvas.height());
+		this.ctx.fillRect(0,0,canvas.width,canvas.height);
 		this.start(seconds,callBack);
 	},
 
@@ -39,7 +39,7 @@ var rain = {
 	//param 循环间隔 总次数 回调函数
 	loop : function(){
 		this.ctx.fillStyle = this.bgc;
-		this.ctx.fillRect(0,0,$canvas.width(),$canvas.height());
+		this.ctx.fillRect(0,0,this.canvas.width,this.canvas.height);
 		for(var i=0;i<this.cols;i++){
 			if(Math.random()>0.95){
 				this.ctx.fillStyle = '#fff';

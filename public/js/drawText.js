@@ -11,14 +11,15 @@ var drawText = {
 			fontSize: userConf.fontSize || 22,                  //字体大小
 			x:userConf.x || 0,									//起始坐标x
 			y:userConf.y || 0,									//起始坐标y
-			imgData:[],											//截取数据
-			colorRgb: userConf.colorRgb || [255,255,255] ,			//字体颜色,rgb数组				
+			colorRgb: userConf.colorRgb || [255,255,255] ,		//字体颜色,rgb数组				
 			ctx: userConf.ctx, 									//画布ctx对象
 			pixel:userConf.pixel || 12, 						//像素颗粒大小
-			time:0,
-			frame:userConf.frame || 1000/80,
+			frame:userConf.frame || 1000/80,					//动画帧速度
 			animateDuration:userConf.animateDuration || 2000,
-			pixelContent:userConf.pixelContent || 0  			//像素填充内容 默认随机字符
+			pixelContent:userConf.pixelContent || 0 , 			//像素填充内容 默认随机字符
+			imgData:[],											//截取数据 
+			time:0,
+
 		};
 
 		this.conf.width = userConf.width ||	this.conf.fontSize * this.conf.fontContent.length;

@@ -9,52 +9,55 @@
 <body >	
 	<canvas id="indexCanvas">你的浏览器不支持</canvas>
 	<canvas id="welcome" class="welcome-text"></canvas>
+	<div class="index-enter-btn trans">Enter</div>
 </body>
 <script src="js/jquery3.1.0.js"></script>
 <script src="js/rain.js"></script>
 <script src="js/drawText.js"></script>
 <script src="js/musicPlayer.js"></script>
 <script>
-	var $canvas = $('#indexCanvas');
-	var ctx = $canvas[0].getContext('2d');
-	$(document).ready(function(){
-		//文字雨
-		var resizeCanvas = function(){
-			$('canvas').attr("width", $(window)[0].innerWidth);
-       		$('canvas').attr("height", $(window)[0].innerHeight);
-		}
-		resizeCanvas();
-		rain.initCanvas($canvas,0);
-
-		
-		//欢迎
-		setTimeout(function() {
-			$canvas.addClass('blur');
-			var conf = {
-					fontContent:'欢迎来到shuai的网站',
-					fontSize:18,
-					pixel:8,
-					ctx:document.getElementById('welcome').getContext('2d'),
-					animateDuration:4000,
-					frame:1000/30
-				}
-
-			conf.x = (window.innerWidth - 1355 )/2;
-			conf.y = (window.innerHeight  - conf.fontSize * conf.pixel )/2 - 50;
-			drawText.init(conf).callBack(function(){
-				setTimeout(function(){
-					drawText.clearImg();
-				},2000);
-			});
-		},3000);
-
-		Player.init({
-			src:['file/cloneAwake.mp3'],
-			// autoPlay:true
-		});
+(function(){
+	Player.init({
+		src:['file/cloneAwake.mp3'],
+		autoPlay:true
 	});
 
+	var $canvas = $('#indexCanvas');
+	var ctx = $canvas[0].getContext('2d');
+	$('canvas').attr("width", window.innerWidth);
+	$('canvas').attr("height", window.innerHeight);
 	
+	//文字雨
+	rain.initCanvas($canvas[0],0);
 
+	//欢迎
+	setTimeout(function() {
+		$canvas.addClass('blur');
+		var conf = {
+				fontContent:'欢迎来到shuai的小站',
+				fontSize:18,
+				pixel:8,
+				ctx:document.getElementById('welcome').getContext('2d'),
+				animateDuration:3000,
+				frame:1000/30
+			};
+
+		conf.x = (window.innerWidth - 1355 )/2;
+		conf.y = (window.innerHeight  - conf.fontSize * conf.pixel )/2 - 50;
+		drawText.init(conf).callBack(function(){
+			$('.index-enter-btn').show();
+		});
+	},2000);
+
+	//欢迎消失
+	$('.index-enter-btn').click(function(){
+		$(this).hide();
+		drawText.clearImg();
+		setTimeout(function(){
+			$canvas.removeClass('blur');
+			$('#welcome').hide();
+		}, 3000);
+	});
+})()
 </script>
 </html>
