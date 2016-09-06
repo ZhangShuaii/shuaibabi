@@ -1,0 +1,775 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"t",
+				"top"
+			],
+			[
+				"fil",
+				"filter"
+			],
+			[
+				"inner",
+				"innerWidth	.innerWidth()"
+			],
+			[
+				"canvas",
+				"canvasData"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"randomChar",
+				"randomCharArr"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"scr",
+				"script	Tag"
+			],
+			[
+				"con",
+				"console.log();"
+			],
+			[
+				"set",
+				"setTimeout(callback, after);"
+			],
+			[
+				"isNew",
+				"isNewData"
+			],
+			[
+				"p",
+				"prop	.prop() - multiple"
+			],
+			[
+				"fin",
+				"finish	.finish()"
+			],
+			[
+				"event",
+				"events.EventEmitter();"
+			],
+			[
+				"readF",
+				"fs.readFileSync(path, options);"
+			],
+			[
+				"createS",
+				"http.createServer(requestListener);"
+			],
+			[
+				"bsn",
+				"bsnend"
+			],
+			[
+				"bs",
+				"bsnStart"
+			],
+			[
+				"inde",
+				"inndexOf"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"cu",
+				"curUser"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"text",
+				"textArray"
+			],
+			[
+				"te",
+				"textArray"
+			],
+			[
+				"over",
+				"overMax"
+			],
+			[
+				"page",
+				"pageNo"
+			],
+			[
+				"btn",
+				"btnGroup"
+			],
+			[
+				"ca",
+				"class"
+			],
+			[
+				"to",
+				"totalPages"
+			],
+			[
+				"re",
+				"requestData"
+			],
+			[
+				"ren",
+				"renderPage"
+			],
+			[
+				"for",
+				"formSubmit"
+			],
+			[
+				"ons",
+				"onsubmit	Attr"
+			],
+			[
+				"g",
+				"goodsList"
+			],
+			[
+				"c",
+				"css	.css() - single"
+			],
+			[
+				"st",
+				"status"
+			],
+			[
+				"goods",
+				"goodsId"
+			],
+			[
+				"go",
+				"goodsList"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"goodsTa",
+				"goodsTable"
+			],
+			[
+				"th",
+				"thead"
+			],
+			[
+				"no",
+				"noDate"
+			],
+			[
+				"pa",
+				"pageNation"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"lo",
+				"loading"
+			],
+			[
+				"po",
+				"pointsArray"
+			],
+			[
+				"bef",
+				"beforeBtn"
+			],
+			[
+				"next",
+				"nextBtn"
+			],
+			[
+				"before",
+				"beforeBtn"
+			],
+			[
+				"nex",
+				"nextBtn"
+			],
+			[
+				"Page",
+				"PageNation"
+			],
+			[
+				"corr",
+				"correctRate"
+			],
+			[
+				"correct",
+				"correctAmounts"
+			],
+			[
+				"arra",
+				"calculateArray"
+			],
+			[
+				"tes",
+				"testOver"
+			],
+			[
+				"test",
+				"testOver"
+			],
+			[
+				"us",
+				"useTime"
+			],
+			[
+				"use",
+				"usedTime"
+			],
+			[
+				"cal",
+				"calculateTime"
+			],
+			[
+				"res",
+				"restTime"
+			],
+			[
+				"star",
+				"startTime"
+			],
+			[
+				"time",
+				"timeStamp"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"an",
+				"answer"
+			],
+			[
+				"sin",
+				"signObj"
+			],
+			[
+				"se",
+				"secondNum"
+			],
+			[
+				"f",
+				"firstNum"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"load",
+				"loadPage"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"unde",
+				"undefined"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"pointC",
+				"pointCurClass"
+			],
+			[
+				"poin",
+				"pointClass"
+			],
+			[
+				"im",
+				"imgWrap"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"bo",
+				"bolder"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"he",
+				"header	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "git hi",
+		"selected_items":
+		[
+			[
+				"git hi",
+				"Git: Commit history"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')",
+			"import urllib2,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')",
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/H/node/test/public/css/index.css",
+		"/H/node/test/public/js/musicPlayer.js",
+		"/H/node/myWeb/html/index.html",
+		"/H/node/test/html/music.html",
+		"/H/node/test/action.js",
+		"/H/node/test/html/index.html",
+		"/H/node/test/html/template.html",
+		"/H/node/test/html/draw.html",
+		"/H/node/test/public/js/drawImg.js",
+		"/H/node/test/public/js/drawText.js",
+		"/H/node/test/public/js/rain.js",
+		"/C/Users/Administrator/Desktop/临时文件夹/tween.js",
+		"/C/Users/Administrator/Desktop/临时文件夹/index.html",
+		"/C/Users/Administrator/Desktop/临时文件夹/drawImg/drawImg.js",
+		"/H/node/express/webAction.js",
+		"/C/Users/Administrator/Desktop/临时文件夹/drawImg/draw.html",
+		"/C/Users/Administrator/Desktop/临时文件夹/TweenTest.html",
+		"/H/node/myWeb/public/css/index.css",
+		"/C/Users/Administrator/Desktop/临时文件夹/drawText.js",
+		"/H/node/myWeb/public/js/drawText.js",
+		"/C/Users/Administrator/Desktop/临时文件夹/draw.js",
+		"/C/Users/Administrator/Desktop/临时文件夹/index.js",
+		"/H/node/excel/steam.js",
+		"/H/node/excel/test.js",
+		"/H/node/excel/main.js",
+		"/C/Users/Administrator/Desktop/临时文件夹/001_2016_8_卡式报表2.xls",
+		"/C/Users/Administrator/Desktop/临时文件夹/001_2016_8_卡式报表.xls",
+		"/C/Users/Administrator/Desktop/临时文件夹/rain.html",
+		"/H/node/myWeb/action.js",
+		"/H/前端/框架/zhangshuai/rain.js",
+		"/H/node/myWeb/public/js/rain.js",
+		"/C/Users/Administrator/Desktop/临时文件夹/music.html",
+		"/H/前端/练习/apple/testApple.html",
+		"/C/Users/Administrator/Desktop/cal.js",
+		"/H/node/excel/file/160731.xls",
+		"/H/node/excel/file/001 - 副本.xlsx",
+		"/H/node/excel/file/001.xlsx",
+		"/C/Users/Administrator/Desktop/rain.html",
+		"/C/Users/Administrator/Desktop/number.js",
+		"/C/Users/Administrator/Desktop/常用的几个字体库---ASC16、HZK16、HZK12,附HZK16的使用资料/字体库/ASC16",
+		"/C/Users/Administrator/Desktop/常用的几个字体库---ASC16、HZK16、HZK12,附HZK16的使用资料/字体库/HZK16",
+		"/H/前端/练习/plane/plane.js",
+		"/C/Users/Administrator/Desktop/excel/未改.xls",
+		"/H/node/excel/file/002副本.xls",
+		"/H/tools/slideJs/js/jquery.slider.js",
+		"/H/node/node_modules/exceljs/package.json",
+		"/H/node/node_modules/exceljs/lib/stream/xlsx/workbook-reader.js",
+		"/H/node/node_modules/exceljs/node_modules/unzip2/package.json",
+		"/H/node/node_modules/exceljs/lib/xlsx/xlsx.js",
+		"/H/node/node_modules/exceljs/node_modules/unzip2/lib/parse.js",
+		"/C/Users/Administrator/Desktop/hack.js",
+		"/H/tools/guyonroche-exceljs-afd0d3a/excel.js",
+		"/H/tools/node-xlsx-master/node-xlsx-master/test/specs/build.spec.js",
+		"/H/tools/node-xlsx-master/node-xlsx-master/src/helpers.js",
+		"/H/tools/node-xlsx-master/node-xlsx-master/src/workbook.js",
+		"/H/tools/node-xlsx-master/node-xlsx-master/src/index.js",
+		"/H/帮唐狒/10/6/index.htm",
+		"/H/帮唐狒/10/6/test.html",
+		"/H/帮唐狒/10/6/css/index.css",
+		"/H/node/express/webDao.js",
+		"/H/node/express/public/js/la.js",
+		"/H/node/express/webService.js",
+		"/H/node/express/public/js/lb.js",
+		"/H/node/express/client.js",
+		"/H/帮唐狒/5/index.htm",
+		"/C/Users/Administrator/Desktop/la.html",
+		"/H/帮唐狒/常见的居中布局.html",
+		"/H/帮唐狒/5/5/index.htm",
+		"/H/node/express/public/js/pp.js",
+		"/C/Users/Administrator/Desktop/6/6/index.htm",
+		"/C/Users/Administrator/Desktop/6/6/Css/bailu123.com.all.css",
+		"/C/Users/Administrator/Desktop/凡海若南/凡海若南/index.html",
+		"/C/Users/Administrator/Desktop/凡海若南/凡海若南/style.css",
+		"/C/Users/Administrator/Desktop/others.js",
+		"/H/node/express/public/js/hack.js",
+		"/C/Users/Administrator/Desktop/goodsM/goodsList.html",
+		"/C/Users/Administrator/Desktop/goodsM/goodsInfo.html",
+		"/C/Users/Administrator/Desktop/goodsM/css/list.css",
+		"/C/Users/Administrator/Desktop/goodsM/js/list.js",
+		"/C/Users/Administrator/Desktop/hxy.zip",
+		"/C/Users/Administrator/Desktop/zyz.zip",
+		"/C/Users/Administrator/Desktop/lxm.zip",
+		"/C/Users/Administrator/Desktop/张涛加油.zip",
+		"/C/Users/Administrator/Downloads/hack (1).zip",
+		"/C/Users/Administrator/Desktop/投票/hack.zip",
+		"/C/Users/Administrator/Desktop/ng/ngrok.cfg",
+		"/H/node/global/global.js",
+		"/H/node/param/main.js",
+		"/H/node/param/param.js",
+		"/H/node/fs/fs.js",
+		"/H/node/require/hello.js",
+		"/H/node/require/main.js",
+		"/H/node/param/index.css",
+		"/H/node/buffer/buffer.js",
+		"/H/node/event/event.js",
+		"/C/Users/Administrator/Desktop/计算训练/index.html",
+		"/H/node/hello/hello.js",
+		"/C/Users/Administrator/Downloads/hack (2).zip",
+		"/C/Users/Administrator/Desktop/投票/hack.js",
+		"/C/Users/Administrator/Desktop/计算训练/jquery.js",
+		"/H/商品详情/js/list.js",
+		"/H/商品详情/css/list.css",
+		"/H/商品详情/goodsList.html",
+		"/C/Users/Administrator/Desktop/1.html",
+		"/H/list/css/dialog.css",
+		"/H/商品详情/css/index.css",
+		"/H/list/css/index.css",
+		"/H/list/list.html",
+		"/H/list/js/list.js",
+		"/H/list/list.psd",
+		"/C/Users/Administrator/Desktop/树懒表情包/index.html",
+		"/C/Users/Administrator/Downloads/set (1)",
+		"/H/list/js/detail.js",
+		"/C/Users/Administrator/Desktop/index/css/index.css",
+		"/C/Users/Administrator/Desktop/index/detail.html",
+		"/C/Users/Administrator/Desktop/index/js/index.js",
+		"/C/Users/Administrator/Desktop/index/js/jquery.slider.js",
+		"/C/Users/Administrator/Desktop/index/index.html",
+		"/H/index/index.html"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"easeOut",
+			"console",
+			",\n",
+			"parseDataArr",
+			"fillst",
+			"font",
+			"getPosition",
+			"time",
+			"positionData",
+			"35",
+			"colorRgb",
+			"0f0",
+			"2d",
+			"World",
+			"conf.x",
+			":{},\n",
+			"animateFrame",
+			"intervalTime",
+			"rain",
+			"fontsize",
+			"text1",
+			"excelStr = excelStr.replace('<Cell ss:StyleID=\"s33\"/>',function(dataTeg){\n		var newCellText  =  '<Cell ss:StyleID=\"s33\"><Data ss:Type=\"String\">' + \n				getRandomTime(true) + ' ' +getRandomTime(false)\n				+'</Data></Cell>';\n		console.log(newCellText);\n		return newCellText;\n	});",
+			"<Cell ss:StyleID=\"s33\"/>",
+			"console",
+			"sign",
+			"0",
+			"80px",
+			"></",
+			";}\n",
+			".bomlogo",
+			"><",
+			"==');\n",
+			">\n",
+			"openid",
+			"$",
+			"ajax",
+			"console",
+			"getBsn",
+			"console",
+			"log",
+			"zhang",
+			"();\n",
+			";\n",
+			"			}",
+			"	\n",
+			"btn-group",
+			"\"></",
+			"();;",
+			"calculateArray",
+			"\n			",
+			"initTest",
+			"testAmount",
+			"calculateArry",
+			"); ",
+			"%;\n",
+			"	\n",
+			"计算训练",
+			"\"><</",
+			"	\n",
+			"1",
+			"nipic",
+			".turn-page-btn.left{\n	\n}",
+			"clear",
+			"水果",
+			"callBack",
+			"(){\n",
+			"pointClass",
+			";\n",
+			".index-content-section.vegetables{\n	background-image: url('../img/vegetables2.png');\n}",
+			";\n",
+			"30",
+			".index-content-section.earth{\n	background-image: url('img/earth.png');\n}",
+			"养颜滋润",
+			"	\n",
+			"\"></",
+			"我的订单",
+			"javascript",
+			">\n",
+			"index",
+			"css"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -40,13 +40,17 @@
 				}
 
 			conf.x = (window.innerWidth - 1355 )/2;
-			conf.y = (window.innerHeight  - conf.fontSize * conf.pixel )/2;
-			drawText.init(conf);
+			conf.y = (window.innerHeight  - conf.fontSize * conf.pixel )/2 - 50;
+			drawText.init(conf).callBack(function(){
+				setTimeout(function(){
+					drawText.clearImg();
+				},2000);
+			});
 		},3000);
 
 		Player.init({
 			src:['file/cloneAwake.mp3'],
-			autoPlay:true
+			// autoPlay:true
 		});
 	});
 

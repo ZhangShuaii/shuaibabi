@@ -13,7 +13,6 @@ var Player = {
 		var audio = document.createElement('audio');
 		var thisPlayer = this;
 		audio.oncanplay = function(){
-			console.log(333);
 			thisPlayer.conf.autoPlay && audio.play();
 			thisPlayer.conf.isLoop && audio.setAttribute('loop','loop');
 			thisPlayer.audio = audio;

@@ -1,8 +1,8 @@
 /*
 *canvas 绘制文字
 * 使用 drawText.init(conf)
-* @author:shuai
 * @Date 2016.9.5
+* @author:ZhangShuai
 */
 var drawText = {
 	init:function(userConf){
@@ -25,7 +25,7 @@ var drawText = {
 		this.conf.height = userConf.height || this.conf.fontSize + 4;
 		this.createCanvas();
 		this.parseDataArr();
-		this.drawPic();
+		this.drawImg(false);
 		return this;
 	},
 	createCanvas:function(){
@@ -56,8 +56,8 @@ var drawText = {
 			var textData = {
 				content:this.conf.pixelContent || String.fromCharCode(Math.random()*1000),
 				start : {
-					x : (Math.random()-0.5)*this.conf.ctx.canvas.width*4,
-					y : (Math.random()-0.5)*this.conf.ctx.canvas.height*4
+					x : (Math.random()-0.5)*this.conf.ctx.canvas.width*6,
+					y : (Math.random()-0.5)*this.conf.ctx.canvas.height*6
 				},
 				over :{
 					x: (i % (this.conf.imgData.width*4) / 4)*this.conf.pixel + this.conf.x,
@@ -68,11 +68,6 @@ var drawText = {
 							+this.conf.colorRgb[2]+","
 							+this.conf.imgData.data[i+3]/80
 							+')'
-				/*rgb : "rgba("+ (Math.random()*255|0).toString() +","
-							+ (Math.random()*255|0).toString() +","
-							+  (Math.random()*255|0).toString() +","
-							+this.conf.imgData.data[i+3]/80
-							+')'*/
 			};
 
 			textData.distance = {
@@ -85,35 +80,62 @@ var drawText = {
 
 		this.conf.textArr = textArr;
 	},
-	drawPic:function(){
+	drawImg:function(isClear){
 		var newCtx = this.conf.ctx;
 			newCtx.font = this.conf.pixel + 'px arial';
 		var thisDraw = this;
+			thisDraw.conf.time = 0;
 
 		var animateFrame = function(){
 			newCtx.clearRect(0,0,newCtx.canvas.width,newCtx.canvas.height);
 			for(var i=0;i<thisDraw.conf.textArr.length;i++){
-				var nowPosition = {
-					x: thisDraw.easeOut(thisDraw.conf.time,
-										thisDraw.conf.textArr[i].start.x,
-										thisDraw.conf.textArr[i].distance.x,
-										thisDraw.conf.animateDuration),
-					y: thisDraw.easeOut(thisDraw.conf.time,
-										thisDraw.conf.textArr[i].start.y,
-										thisDraw.conf.textArr[i].distance.y,
-										thisDraw.conf.animateDuration)
-				};
+				if(isClear){
+					var nowPosition = {
+						x: thisDraw.easeIn(thisDraw.conf.time,
+											thisDraw.conf.textArr[i].over.x,
+											-thisDraw.conf.textArr[i].distance.x,
+											thisDraw.conf.animateDuration),
+						y: thisDraw.easeIn(thisDraw.conf.time,
+											thisDraw.conf.textArr[i].over.y,
+											-thisDraw.conf.textArr[i].distance.y,
+											thisDraw.conf.animateDuration)
+					};
+				}else{
+					var nowPosition = {
+						x: thisDraw.easeOut(thisDraw.conf.time,
+											thisDraw.conf.textArr[i].start.x,
+											thisDraw.conf.textArr[i].distance.x,
+											thisDraw.conf.animateDuration),
+						y: thisDraw.easeOut(thisDraw.conf.time,
+											thisDraw.conf.textArr[i].start.y,
+											thisDraw.conf.textArr[i].distance.y,
+											thisDraw.conf.animateDuration)
+					};
+				}
+				
 				newCtx.fillStyle = thisDraw.conf.textArr[i].rgb;
 				newCtx.fillText(thisDraw.conf.textArr[i].content,nowPosition.x,nowPosition.y);
 			};
 
 			thisDraw.conf.time += thisDraw.conf.frame;
+
 			if(thisDraw.conf.time > thisDraw.conf.animateDuration){
+				thisDraw.fun && thisDraw.fun.call(thisDraw);
+				isClear && newCtx.clearRect(0,0,newCtx.canvas.width,newCtx.canvas.height);
+				thisDraw.fun = null;
 				return;
 			}
+
 			setTimeout(animateFrame, thisDraw.conf.frame);
 		}
 		animateFrame();
+	},
+	clearImg:function(){
+		if(this.conf){
+			this.drawImg(true)
+		}else{
+			drawText.drawImg(true);
+		}
 	},
 	callBack:function(fun){
 		this.fun = fun ;

@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var HTML_PATH = '/node/myWeb/html/';
+var HTML_PATH = '/node/shuaibabi/html/';
 
 app.use(express.static('public'));
 
