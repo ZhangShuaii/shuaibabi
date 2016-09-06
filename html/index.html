@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>帅的个人网站</title>
+	<link rel="shortcut icon" href="img/shortcut.png" type="image/png">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body >	
+	<canvas id="indexCanvas">你的浏览器不支持</canvas>
+	<canvas id="welcome" class="welcome-text"></canvas>
+</body>
+<script src="js/jquery3.1.0.js"></script>
+<script src="js/rain.js"></script>
+<script src="js/drawText.js"></script>
+<script src="js/musicPlayer.js"></script>
+<script>
+	var $canvas = $('#indexCanvas');
+	var ctx = $canvas[0].getContext('2d');
+	$(document).ready(function(){
+		//文字雨
+		var resizeCanvas = function(){
+			$('canvas').attr("width", $(window)[0].innerWidth);
+       		$('canvas').attr("height", $(window)[0].innerHeight);
+		}
+		resizeCanvas();
+		rain.initCanvas($canvas,0);
+
+		
+		//欢迎
+		setTimeout(function() {
+			$canvas.addClass('blur');
+			var conf = {
+					fontContent:'欢迎来到shuai的网站',
+					fontSize:18,
+					pixel:8,
+					ctx:document.getElementById('welcome').getContext('2d'),
+					animateDuration:4000,
+					frame:1000/30
+				}
+
+			conf.x = (window.innerWidth - 1355 )/2;
+			conf.y = (window.innerHeight  - conf.fontSize * conf.pixel )/2;
+			drawText.init(conf);
+		},3000);
+
+		Player.init({
+			src:['file/cloneAwake.mp3'],
+			autoPlay:true
+		})
+	});
+
+	
+
+</script>
+</html>
