@@ -95,25 +95,26 @@ var drawText = {
 						x: thisDraw.easeIn(thisDraw.conf.time,
 											thisDraw.conf.textArr[i].over.x,
 											-thisDraw.conf.textArr[i].distance.x,
-											thisDraw.conf.animateDuration),
+											thisDraw.conf.animateDuration)|0,
 						y: thisDraw.easeIn(thisDraw.conf.time,
 											thisDraw.conf.textArr[i].over.y,
 											-thisDraw.conf.textArr[i].distance.y,
-											thisDraw.conf.animateDuration)
+											thisDraw.conf.animateDuration)|0
 					};
 				}else{
 					var nowPosition = {
 						x: thisDraw.easeOut(thisDraw.conf.time,
 											thisDraw.conf.textArr[i].start.x,
 											thisDraw.conf.textArr[i].distance.x,
-											thisDraw.conf.animateDuration),
+											thisDraw.conf.animateDuration)|0,
 						y: thisDraw.easeOut(thisDraw.conf.time,
 											thisDraw.conf.textArr[i].start.y,
 											thisDraw.conf.textArr[i].distance.y,
-											thisDraw.conf.animateDuration)
+											thisDraw.conf.animateDuration)|0
 					};
 				}
 				
+				newCtx.fillStyle = thisDraw.conf.textArr[i].rgb;
 				newCtx.fillStyle = thisDraw.conf.textArr[i].rgb;
 				newCtx.fillText(thisDraw.conf.textArr[i].content,nowPosition.x,nowPosition.y);
 			};
@@ -131,7 +132,8 @@ var drawText = {
 		}
 		animateFrame();
 	},
-	clearImg:function(){
+	clearImg:function(fun){
+		this.fun = fun;
 		if(this.conf){
 			this.drawImg(true)
 		}else{

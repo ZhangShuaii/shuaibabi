@@ -12,16 +12,17 @@ var Player = {
 	createDom :function(){
 		var audio = document.createElement('audio');
 		var thisPlayer = this;
+		thisPlayer.audio = audio;
+
 		audio.oncanplay = function(){
 			thisPlayer.conf.autoPlay && audio.play();
 			thisPlayer.conf.isLoop && audio.setAttribute('loop','loop');
-			thisPlayer.audio = audio;
-			thisPlayer.createButton();
-			thisPlayer.addEvent();
+			thisPlayer.button.setAttribute('style','display:block;');
 		}
 
 		audio.src = thisPlayer.conf.src[0];
-		
+		thisPlayer.createButton();
+		thisPlayer.addEvent();
 	},
 	createButton:function(){
 		var button = document.createElement('div');
