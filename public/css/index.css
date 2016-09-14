@@ -38,6 +38,22 @@ button{
 	-o-transition: all 1s;
 }
 
+
+.trans-fast{
+	transition: all .5s;
+	-moz-transition: all .5s;	
+	-webkit-transition: all .5s;	
+	-o-transition: all .5s;
+}
+
+
+.trans-slow{
+	transition: all 1.5s;
+	-moz-transition: all 1.5s;	
+	-webkit-transition: all 1.5s;	
+	-o-transition: all 1.5s;
+}
+
 #indexCanvas{
 	position: fixed;
 	top: 0;
@@ -148,11 +164,15 @@ button{
 	margin-bottom: 5px;
 }
 
+.app-item .app-img:hover{
+	transform: scale(2);
+}
+
 .app-item .app-name{
 	width: 100%;
-    height: 14px;
-    line-height: 14px;
+    height: 16px;
+    line-height: 16px;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     display: block;
 }
