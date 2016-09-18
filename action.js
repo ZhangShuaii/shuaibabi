@@ -9,6 +9,10 @@ app.get('/',function(req,res){
 	res.sendFile(HTML_PATH + 'index.html');
 });
 
+app.get('/game',function(req,res){
+	console.log(new Date().toString() + req.ip + '访问了你');
+	res.sendFile(HTML_PATH + 'game/index.html');
+});
 
 app.get('*',function(req,res){
 	res.sendFile(HTML_PATH + '404.html');

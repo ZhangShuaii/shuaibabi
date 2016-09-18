@@ -176,3 +176,87 @@ button{
     font-size: 16px;
     display: block;
 }
+
+.list-header{
+	width: 100%;
+	background-color: #000;
+	text-indent: 40px;
+	line-height: 50px;
+	font-size: 18px;
+}
+
+.list-header a{
+	color: #fff;
+}
+
+.list-nav{
+	width: 100%;
+	position: relative;
+}
+
+.list-nav .nav-img{
+	width: 100%;
+	display: block;
+}
+
+.list-nav .nav-title{
+	position: absolute;
+	top: 50%;
+	left:0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 60px;
+	line-height: 60px;
+	margin-top: -30px;
+}
+
+.list-nav .nav-shadow{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color:rgba(0,0,0,.3);
+}
+
+.list-nav a{
+	display: block;
+}
+
+.list-content{
+	padding: 35px;
+	/*background-color: linen;*/
+	background-color: rgb(246,245,245);
+}
+
+.list-content ul{
+
+}
+
+.list-content .list-item{
+	width: calc(25% - 30px);
+	width: -webkit-calc(25% - 30px);
+	margin: 0 15px 30px;
+	background-color: #fff;
+	float: left;
+	cursor: pointer;
+}
+
+.list-content .list-item:hover{
+	-webkit-box-shadow: 0px 0px 15px #ccc;
+	-moz-box-shadow: 0px 0px 15px #ccc;
+	box-shadow: 0px 0px 15px #ccc;
+}
+
+.list-content .list-item img{
+	width: 100%;
+	display: block;
+}
+
+.list-content .list-item h3{
+	padding: 15px 20px;
+	margin: 0;
+	font-weight: normal;
+	font-size: 20px;	
+}
